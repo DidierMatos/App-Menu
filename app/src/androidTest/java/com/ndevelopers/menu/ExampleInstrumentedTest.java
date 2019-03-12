@@ -1,4 +1,4 @@
-package com.teamtreehouse.colorizer;
+package com.ndevelopers.menu;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.teamtreehouse.colorizer", appContext.getPackageName());
+        assertEquals("com.ndevelopers.menu", appContext.getPackageName());
     }
 }

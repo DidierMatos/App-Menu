@@ -1,4 +1,4 @@
-package com.teamtreehouse.colorizer;
+package com.ndevelopers.menu;
 
 import android.graphics.Color;
 import android.graphics.ColorMatrix;
@@ -11,7 +11,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.bumptech.glide.DrawableRequestBuilder;
 import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {

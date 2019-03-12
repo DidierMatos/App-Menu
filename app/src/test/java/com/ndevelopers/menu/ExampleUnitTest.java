@@ -1,4 +1,4 @@
-package com.teamtreehouse.colorizer;
+package com.ndevelopers.menu;
 
 import org.junit.Test;
 
