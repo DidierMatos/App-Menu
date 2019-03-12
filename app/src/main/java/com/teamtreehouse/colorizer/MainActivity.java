@@ -35,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuItem menuItem = menu.add("Next Image"); // se añade una opcion en el menu
+
+        /*MenuItem menuItem = menu.add("Next Image"); // se añade una opcion en el menu
         //menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS); // coloca fija la opcion del menu como boton
         menuItem.setIcon(R.drawable.ic_add_a_photo_black_24dp); // se enlazo el icono para usar y mostrar en el boton de menu
-        menuItem.getIcon().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP); //cambia el color del icono que se agrego anteriormente
+        menuItem.getIcon().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP); //cambia el color del icono que se agrego anteriormente */
 
         return true;
     }
