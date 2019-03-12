@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         menu.findItem(R.id.green).setChecked(green);
         menu.findItem(R.id.blue).setChecked(blue);
 
+        menu.setGroupVisible(R.id.colorGroup, color);
+
         /*MenuItem menuItem = menu.add("Next Image"); // se añade una opcion en el menu
         //menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS); // coloca fija la opcion del menu como boton
@@ -66,6 +68,32 @@ public class MainActivity extends AppCompatActivity {
                     imageIndex=0;
                 loadImage();
                 break;
+            case R.id.color:
+                color = !color;
+                updateSaturation();
+                invalidateOptionsMenu();
+                break;
+            case R.id.red:
+                red = !red;
+                updateColors();
+                item.setChecked(red);
+                invalidateOptionsMenu();
+                break;
+            case R.id.green:
+                red = !green;
+                updateColors();
+                item.setChecked(green);
+                break;
+            case R.id.blue:
+                red = !blue;
+                updateColors();
+                item.setChecked(blue);
+                break;
+            case R.id.reset:
+                imageView.clearColorFilter();
+                red = green = blue = color = true;
+                break;
+
         }
         return super.onOptionsItemSelected(item);
     }
