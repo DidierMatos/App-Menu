@@ -40,9 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
         getMenuInflater().inflate(R.menu.options_menu, menu); //enlaza el layout options_menu para mostrar
 
-        Drawable nextImageDrawable = menu.findItem(R.id.nextImage).getIcon();
-        nextImageDrawable.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP
+        Drawable nextImageDrawable = menu.findItem(R.id.nextImage).getIcon(); //encontrando nextImage
+        nextImageDrawable.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP // estableciendole un color blanco
         );
+
+        menu.findItem(R.id.red).setChecked(red);
+        menu.findItem(R.id.green).setChecked(green);
+        menu.findItem(R.id.blue).setChecked(blue);
 
         /*MenuItem menuItem = menu.add("Next Image"); // se añade una opcion en el menu
         //menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
