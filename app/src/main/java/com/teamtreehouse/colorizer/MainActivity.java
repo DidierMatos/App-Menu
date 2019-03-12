@@ -4,12 +4,14 @@ import android.graphics.Color;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import com.bumptech.glide.DrawableRequestBuilder;
 import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.options_menu, menu); //enlaza el layout options_menu para mostrar
+
+        Drawable nextImageDrawable = menu.findItem(R.id.nextImage).getIcon();
+        nextImageDrawable.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_ATOP
+        );
 
         /*MenuItem menuItem = menu.add("Next Image"); // se añade una opcion en el menu
         //menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
